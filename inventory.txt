@@ -1,0 +1,9 @@
+localhost ansible_host=localhost ansible_connection=ssh ansible_user=root ansible_ssh_pass=root@123
+web_vm1 ansible_host=ansible-target1 ansible_connection=ssh ansible_user=root ansible_ssh_pass=root@123
+db_vm1 ansible_host=ansible-target2 ansible_connection=ssh ansible_user=root ansible_ssh_pass=root@123
+
+[webvms]
+web_vm1
+
+[dbvms]
+db_vm1
